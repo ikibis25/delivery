@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<!-- Copyright (c) 2017
+------------------------------------------------------------------
+[Master Stylesheet]
+
+Project: Door To Door
+Version: 1.0.0
+------------------------------------------------------------------->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- Head Start -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Door To Door Multipurpose Responsive HTML Template</title>
+<!-- favicon links -->
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+<!-- Main css -->
+<link rel="stylesheet" href="css/animate.css" media="screen"/>
+<link rel="stylesheet" href="css/fonts.css" media="screen"/>
+<link rel="stylesheet" href="css/font-awesome.css" media="screen"/>
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen"/>
+<link rel="stylesheet" href="css/bootstrap-datepicker.min.css" media="screen"/>
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" media="screen"/>
+<link rel="stylesheet" href="css/dropdowns-enhancement.css" media="screen"/>
+<link rel="stylesheet" href="css/owl.theme.css" media="screen"/>
+<link rel="stylesheet" href="css/owl.transitions.css" media="screen"/>
+<link rel="stylesheet" href="css/owl.carousel.css" media="screen"/>
+<link rel="stylesheet" href="css/style.css" media="screen"/>
+</head>
+<!-- Head End -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!--Request Call Back Button-->
+<a href="" class="mp-request-call-back" data-toggle="modal" data-target="#reqCallBack">
+	<span>
+		<img src="images/telephone.png" alt=""><img src="images/telephone-hover.png" class="hover" alt="">
+	</span>
+</a>
+<!-- Request Call Back Button-->
+<!--Navigation-->
+<nav role="navigation" class="navbar navbar-custom navbar-static" id="navbar-example">
+	<div class="mp-topbar">
+		<div class="container">
+			<ul class="mp-list-none top-contact-details">
+				<li><i aria-hidden="true" class="fa fa-envelope"></i> <a href="#">info@dtdmovers.com</a></li>
+				<li><i aria-hidden="true" class="fa fa-map-marker"></i> 192 Westhaven Dr, Laguna Hills, CA, 92653</li>
+			</ul>
+			<div class="call-us-now"> <span>Call Us Now:</span> <a href="tel:8833-2299">8833-2299</a></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="navbar-header">
+			<button data-target=".bs-example-js-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Door To Door"></a>
+		</div>
+		<div class="collapse navbar-collapse bs-example-js-navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="team.html">Team</a></li>
+				<li class="dropdown"><a href="#" data-toggle="dropdown">Blog <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="blog.html" tabindex="-1">blog</a></li>
+						<li><a href="blog-single.html" tabindex="-1">blog single</a></li>
+					</ul>
+				</li>
+				<li class="dropdown active"><a href="#" data-toggle="dropdown">pages <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="faq.html" tabindex="-1">Faq</a></li>
+						<li><a href="booking-details.html" tabindex="-1">Booking Details</a></li>
+						<li><a href="error404.html" tabindex="-1">Error 404</a></li>
+						<li><a href="inner-page-empty.html" tabindex="-1">Empty Page</a></li>
+					</ul>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- /Navigation -->
+<!--Hero Header-->
+<header class="mp-inner-hero-header">
+	<div class="container">
+		<div class="mp-section-heading text-center header-light wow fadeIn" data-wow-duration="2s" data-wow-delay=".1s">
+			<h1>Book Now</h1>
+			<p>Li Europan lingues es membres del sam familie Lor separat existentie es un myth.</p>
+		</div>
+		<ol class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li class="active">Book Now</li>
+		</ol>
+	</div>
+</header>
+<!-- /Hero Header-->
+<!--Page Content-->
+<section class="inner-page-content">
+	<div class="container mp-booking">
+		<ul class="nav nav-tabs nav-justified" id="mpTabs">
+			<li class="active mp-submitted"><a data-toggle="tab" href="#move-details">Moving Details</a></li>
+			<li><a data-toggle="tab" href="#contact-details">Contact Details</a></li>
+			<li><a data-toggle="tab" href="#household-items">Household Items</a></li>
+			<li><a data-toggle="tab" href="#confirmation">Confirmation</a></li>
+		</ul>
+		<div class="mp-form-content">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="tab-content">
+						<div id="move-details" class="tab-pane fade in active">
+							<h3>Request a Free Moving Quote</h3>
+							<form action="bokking.php">
+								<div class="row">
+									<fieldset class="form-group col-md-6">
+										<label for="movingFrom">Moving From</label>
+										<div class="mp-input-icon mp-input-icon-right">
+											<input type="text" placeholder="Moving From" class="form-control" id="movingFrom">
+											<i aria-hidden="true" class="mp-icon fa fa-map"></i>
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-6">
+										<label for="movingTo">Moving To</label>
+										<div class="mp-input-icon mp-input-icon-right">
+											<input type="text" placeholder="Moving To" class="form-control" id="movingTo">
+											<i aria-hidden="true" class="mp-icon fa fa-map"></i>
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-6">
+										<label for="moveSize">Move Size</label>
+										<select name="moveSize" id="moveSize" class="form-control">
+											<option value="">Select a size</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">5</option>
+											<option value="5">6</option>
+										</select>
+									</fieldset>
+									<fieldset class="form-group col-md-6">
+										<label for="moveTime">Move Time</label>
+										<div class="mp-input-icon mp-input-icon-right">
+											<input type="text" placeholder="Move Time" class="form-control mp-datepicker" id="moveTime">
+											<i aria-hidden="true" class="mp-icon fa fa-calendar-check-o"></i>
+										</div>
+									</fieldset>
+									<div class="mp-spacing-20"></div>
+									<div class="col-md-6">
+										<div class="mp-distance"><i aria-hidden="true" class="fa fa-globe"></i> Distance 391 mi (6 hours 34 mins)</div>
+									</div>
+									<div class="col-md-6 mp-text-right">
+										<button class="btn btn-lg btn-yellow btn-width-270">Next</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div id="contact-details" class="tab-pane fade">
+							<h3>Request a Free Moving Quote</h3>
+							<form action="bokking.php">
+								<div class="row">
+									<fieldset class="form-group col-md-6">
+										<label for="name">Name</label>
+										<div class="mp-input-icon mp-input-icon-right">
+											<input type="text" placeholder="Name" class="form-control" id="name">
+											<i aria-hidden="true" class="mp-icon fa fa-user"></i>
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-6">
+										<label for="findUs">Where did you find us</label>
+										<select name="findUs" id="findUs" class="form-control">
+											<option value="">Select</option>
+											<option value="1">Facebook</option>
+											<option value="2">Twitter</option>
+											<option value="3">Website</option>
+											<option value="4">Friends</option>
+											<option value="5">Other</option>
+										</select>
+									</fieldset>
+									<fieldset class="form-group col-md-6">
+										<label for="phone">Phone</label>
+										<div class="mp-input-icon mp-input-icon-right">
+											<input type="text" placeholder="Phone" class="form-control" id="phone">
+											<i aria-hidden="true" class="mp-icon fa fa-phone"></i>
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-6">
+										<label for="email">Email</label>
+										<div class="mp-input-icon mp-input-icon-right">
+											<input type="email" placeholder="Email" class="form-control" id="email">
+											<i aria-hidden="true" class="mp-icon fa fa-envelope"></i>
+										</div>
+									</fieldset>
+									<div class="col-md-12">
+										<div class="mp-item mp-item-checkbox mp-terms">
+											<label class="mp-checkbox">
+												<input type="checkbox" checked="">
+												<span class="mp-content">
+													<span class="mp-ckecked"><i aria-hidden="true" class="fa fa-check"></i></span>
+												</span> I have read and agree to the
+											</label>
+											<a href="">Terms and Conditions </a>
+										</div>
+									</div>
+									<div class="col-md-9 col-md-push-3 mp-text-right">
+										<div class="mp-buttons">
+											<div class="mp-button">
+												<button class="btn btn-lg btn-white btn-outline btn-width-270">Add Inventory List</button> <small>*Optional for better estimate</small> </div>
+											<div class="mp-button">
+												<button class="btn btn-lg btn-yellow btn-width-270">Confirm</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 col-md-pull-9 mp-text-left">
+										<a href="" class="btn btn-lg btn-yellow">BACK</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div id="household-items" class="tab-pane fade">
+							<form action="householdArea.php">
+								<div class="row mp-col-responsive">
+									<div class="col-md-5">
+										<div class="mp-household-title"> Select areas </div>
+										<div class="mp-household-area mp-household-box">
+											<div class="mp-input-icon mp-input-icon-left mp-search-in-list">
+												<input type="text" class="form-control" placeholder="Search area..."> <i class="mp-icon fa fa-search" aria-hidden="true"></i>
+											</div>
+											<div class="mp-scroll-content-area">
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox" checked>
+														<strong class="mp-checkbox-content"> <span>Living Room</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Dining Room</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Bedrooms</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Office</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox" checked>
+														<strong class="mp-checkbox-content"> <span>Appliances </span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox" checked>
+														<strong class="mp-checkbox-content"> <span>Kitchen </span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Outdoor </span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Other </span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Garage </span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Boxes </span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-7">
+										<div class="mp-household-title"> Select items <span class="pull-right">Item Quantity</span> </div>
+										<div class="mp-household-items mp-household-box">
+											<div class="mp-input-icon mp-input-icon-left mp-search-in-list">
+												<input type="text" class="form-control" placeholder="Search items..."> <i class="mp-icon fa fa-search" aria-hidden="true"></i>
+											</div>
+											<div class="mp-scroll-content mCustomScrollbar light" data-mcs-theme="minimal-dark">
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox" checked>
+														<strong class="mp-checkbox-content"> <span>Medium Enterteinment Center</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Grand Father Clock</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Chair, overstuffed</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>TV (larger than 30")</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Chair, overstuffed</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Sofa Sectional</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Buffet (base)</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>China Cabinet</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Cabinet, corner</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Dining table</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Bookshelves (sectional)</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control"> </div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Night table</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Buffet (base)</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>China Cabinet</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Cabinet, corner</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Dining table</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Bookshelves (sectional)</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+												<div class="mp-checkbox">
+													<label>
+														<input type="checkbox">
+														<strong class="mp-checkbox-content"> <span>Night table</span> <i aria-hidden="true" class="mp-icon fa fa-check"></i> </strong>
+													</label>
+													<input type="number" placeholder="'1'" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+									<fieldset class="form-group col-md-12">
+										<label for="additional">Additional Items/Comments</label>
+										<input type="text" class="form-control" placeholder="Add if any additional Items or comments" id="additional">
+									</fieldset>
+									<div class="col-md-6">
+										<div class="mp-item mp-item-checkbox mp-terms">
+											<label class="mp-checkbox">
+												<input type="checkbox" checked=""> <span class="mp-content">
+												<span class="mp-ckecked"><i aria-hidden="true" class="fa fa-check"></i></span></span> I have read and agree to the
+											</label>
+											<a href="">Terms and Conditions </a>
+										</div>
+									</div>
+									<div class="col-md-6 mp-text-right">
+										<button class="btn btn-lg btn-yellow btn-width-270">Confirm</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div id="confirmation" class="tab-pane fade">
+							<div class="mp-order-confirmation text-center"> <img src="images/mp-thnakyou-thumb.png" class="img-responsive" alt="">
+								<h2>Thank you for your Intrest !</h2>
+								<p>We sent your booking confirmation mail to your registered email address with us. Our executive will contact you within 2 day of working hour, if you won&#8217;t get call from our executive contact with us.</p>
+								<a class="mp-callus" href="tel:16151234567" accesskey="1">+1(615) 123 4567</a>
+								<div class="mp-separator">
+									<hr class="small">
+								</div>
+								<h5>Follow Us on</h5>
+								<div class="mp-social-network">
+									<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a> <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a> <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Page Content-->
+<!--Footer-->
+<footer class="mp-page-footer">
+	<div class="container">
+		<div class="row mp-col-responsive">
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay=".1s">
+				<div class="mp-box">
+					<h3>About us</h3>
+					<p>Door To Door separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li ronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua niform grammatica,</p>
+					<div class="mp-social-network">
+						<a href=""><i aria-hidden="true" class="fa fa-facebook"></i></a>
+						<a href=""><i aria-hidden="true" class="fa fa-twitter"></i></a>
+						<a href=""><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+						<a href=""><i aria-hidden="true" class="fa fa-google-plus"></i></a>
+						<a href=""><i aria-hidden="true" class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay=".2s">
+				<div class="mp-box">
+					<h3>Quick Links</h3>
+					<ul class="mp-list-none mp-link-list">
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Additional Service</a></li>
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Contuct Us</a></li>
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Storage</a></li>
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Quality Policy Statement</a></li>
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Insurance</a></li>
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Ut enim ad minim</a></li>
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Sed do eiusmod tempor</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay=".3s">
+				<div class="mp-box">
+					<h3>Services</h3>
+					<ul class="mp-list-none mp-link-list">
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Residential Moving</a></li>
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Commercial Relocation</a></li>
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Corporate Relocation</a></li>
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Corporate Relocation</a></li>
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> International Move</a></li>
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Packing and Unpacking</a></li>
+						<li><a href=""><i aria-hidden="true" class="fa fa-angle-right"></i> Auto Transport</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay=".4s">
+				<div class="mp-box mp-contact">
+					<h3>Contact us</h3>
+					<div class="">192 Westhaven Dr, <br> Laguna Hills, CA, 92653 </div>
+					<div class="">
+						<a href="tel:+1-202-555-0171">8833-2288</a><br>
+						<a href="tel:+1-202-555-0160">8833-2299</a>
+					</div>
+					<div class="">
+						<a href="mailto:info@movers.com">info@dtdmovers.com</a><br>
+						<a href="mailto:contact@movers.com">info@dtdpackers.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- /Footer-->
+<!--Copyright-->
+<div class="mp-copyright text-center"> Copyrights &copy; 2017 All Rights Reserved by <a href="index.html">Door To Door</a> </div>
+<!-- /Copyright-->
+<!--scroll to top-->
+<a href="" class="mp-scrollToTop"><i aria-hidden="true" class="fa fa-arrow-up"></i></a>
+<!-- /scroll to top-->
+<!-- Modal Request Call Back -->
+<div id="reqCallBack" class="modal fade mp-request-callback-modal" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Request Callback</h4> </div>
+			<div class="modal-body">
+				<form action="req.mail">
+					<fieldset class="form-group">
+						<input type="text" class="form-control" placeholder="Enter name"> </fieldset>
+					<fieldset class="form-group">
+						<input type="text" class="form-control" placeholder="Phone Number"> </fieldset>
+					<fieldset class="form-group">
+						<input type="email" class="form-control" placeholder="Email"> </fieldset>
+				</form>
+			</div>
+			<div class="modal-footer text-center">
+				<button type="button" class="btn btn-lg btn-yellow" data-dismiss="modal">Submit</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Main js file Start--> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="js/dropdowns-enhancement.js"></script>
+<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script>
+	$('.mp-datepicker').datepicker({});
+</script>
+<!--Main js file End-->
+</body>
+</html>

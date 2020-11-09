@@ -1,0 +1,2353 @@
+/*
+Copyright (c) 2017
+------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Door To Door
+Version:	1.0.0
+-------------------------------------------------------------------
+
+[Table of contents]
+
+1 - Body / body
+2 - 
+*/
+
+/***********************************************************************************
+ 1 - Body Start
+***********************************************************************************/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #888888;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Philosopher', sans-serif;
+    text-transform: capitalize;
+}
+a, .btn {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+	text-decoration:none;
+}
+a:hover, a:focus{
+	text-decoration:none;
+	outline:none;
+}
+strong, b {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+input, textarea, select, button{
+	outline: none;
+}
+input:focus, textarea:focus, select:focus, button:focus {
+	outline: none !important;
+	box-shadow:none !important;
+}
+/***********************************************************************************
+ 1 - Body End
+***********************************************************************************/
+/***********************************************************************************
+ 2 - Button Start
+***********************************************************************************/
+.mp-list-none {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.btn {
+    border-radius: 0px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: normal;
+    text-transform: capitalize;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+a.btn-lg {
+    line-height: 34px;
+}
+.btn.btn-lg {
+    min-height: 56px;
+}
+.btn.btn-white {
+    background: #ffffff;
+    color: #017de7;
+}
+.btn.btn-white:hover,
+.btn.btn-white:focus {
+    background-color: #009be5;
+	color:#ffffff;
+}
+.btn.btn-white:hover:active,
+.btn.btn-white:focus:active {
+    background-color: #009be5;
+}
+.btn.btn-yellow {
+    background: #017de7;
+    color: #ffffff;
+}
+.btn.btn-yellow:hover,
+.btn.btn-yellow:focus {
+    background-color: #009be5;
+}
+.btn.btn-yellow:hover:active,
+.btn.btn-yellow:focus:active {
+    background-color: #009be5;
+}
+.btn-white.btn-outline {
+    border: 2px solid #017de7
+}
+.btn-clear {
+    color: #bcbcbc;
+}
+/***********************************************************************************
+ 2 - Button End
+***********************************************************************************/
+/***********************************************************************************
+ 3 - Form Start
+***********************************************************************************/
+.form-control {
+    min-height: 46px;
+    border-radius: 0px;
+    padding: 0 15px;
+    box-shadow: none;
+    color: #000;
+}
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+    background-color: #fff;
+    border-radius: 0px;
+    min-height: 56px;
+    color: #000;
+    width: 50%;
+    resize: none;
+    margin-bottom: 30px;
+}
+.wpcf7-form {
+    background: none;
+    border: none;
+}
+.wpcf7-form input {
+    padding: 10px 15px;
+    margin-bottom: 30px;
+}
+.wpcf7-form textarea {
+    padding: 10px 0px 10px 14px;
+}
+.wpcf7-form p {
+    color: #434343;
+    margin-top: 10px;
+}
+.wpcf7-form .wpcf7-submit {
+    background: #017de7;
+    cursor: pointer;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #fff;
+    border-radius: 26px;
+    min-height: 56px;
+}
+textarea.form-control {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    resize: none
+}
+/***********************************************************************************
+ 3 - Form End
+***********************************************************************************/
+/***********************************************************************************
+ 4 - Section & Breadcrumb Start
+***********************************************************************************/
+section {
+    padding: 50px 0 50px;
+}
+section.mp-section-with-col {
+    padding: 50px 0 10px;
+}
+.breadcrumb > li {
+    font-size: 13px;
+    text-transform: uppercase
+}
+.breadcrumb > li > a {
+    color: #ffffff;
+}
+
+.breadcrumb > .active {
+    color: #f8edc9;
+}
+.breadcrumb > li + li::before {
+    content: '';
+    font-family: 'FontAwesome';
+    color: #ffffff;
+    padding: 0 10px;
+}
+.mp-desktop-view {
+    display: none
+}
+.mp-mobile-view {
+    display: block;
+}
+.mp-section-heading {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 34px;
+}
+.mp-section-heading:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(241, 183, 1, 0);
+    border-top-color: #017de7;
+    border-width: 7px;
+    margin-left: -7px;
+}
+.mp-section-heading:before {
+    width: 100px;
+    height: 2px;
+    content: " ";
+    background: #017de7;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 0;
+}
+.mp-section-heading.header-light h2,
+.mp-section-heading.header-light h1 {
+    color: #ffffff;
+}
+.mp-section-heading.header-light p {
+    color: #ffffff;
+}
+.mp-section-heading.header-light:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 7px;
+    margin-left: -7px;
+}
+.mp-section-heading.header-light:before {
+    width: 100px;
+    height: 2px;
+    content: " ";
+    background: #ffffff;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 0;
+}
+.mp-section-heading h2,
+.mp-section-heading h1 {
+    color: #111111;
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+.mp-col-responsive [class*="col-"] {
+    margin-bottom: 30px;
+}
+.mp-col-responsive [class*="col-"] [class*="col-"] {
+    margin-bottom: 0px;
+}
+.mp-inner-hero-header {
+    background: url(http://placehold.it/1920X1080);
+    text-align: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 260px;
+    padding-top: 130px;
+}
+.mp-inner-hero-header .container {
+    position: relative;
+    padding-bottom: 20px;
+}
+.mp-inner-hero-header .mp-section-heading {
+    margin: 30px 0;
+}
+.mp-inner-hero-header .breadcrumb {
+    background: none;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    left: 0;
+    margin: 0px auto;
+}
+.mp-icon-right .indicator:before {
+    font-family: FontAwesome;
+    content: '';
+    font-size: 14px;
+    color: #ffffff;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.mp-icon-right.collapsed .indicator {
+    background-color: #f4f4f4;
+}
+.mp-icon-right.collapsed .indicator:before {
+    color: #888888;
+}
+.mp-icon-right.collapsed .indicator:before {
+    font-family: FontAwesome;
+    content: '';
+    font-size: 14px;
+}
+.mp-icon-right.collapsed:hover .indicator {
+    background-color: #017de7;
+}
+.mp-icon-right.collapsed:hover .indicator:before {
+    color: #ffffff;
+}
+/***********************************************************************************
+ 4 - Section & Breadcrumb End
+***********************************************************************************/
+/***********************************************************************************
+ 5 - Topbar & Navigation Start
+***********************************************************************************/
+.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    margin: 0;
+    border-radius: 0px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.mp-topbar {
+    background-color: transparent;
+    padding: 10px 0px;
+    border-bottom: 1px solid;
+}
+.mp-topbar li {
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+}
+.mp-topbar li .fa {
+    margin-right: 5px;
+}
+.mp-topbar a {
+    color: #ffffff;
+    outline: none;
+}
+.mp-topbar li a {
+    font-size: 14px;
+}
+.mp-topbar a:hover,
+.mp-topbar a:focus {
+    text-decoration: none;
+    color: #017de7;
+}
+.mp-topbar li + li {
+    margin-left: 30px;
+}
+.mp-topbar .top-contact-details {
+    display: none;
+}
+.mp-topbar .call-us-now {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+.mp-topbar .call-us-now span {
+    font-size: 14px;
+}
+.navbar-nav > li > a {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #ffffff;
+    padding: 30px 15px;
+    line-height: 24px;
+}
+.navbar-brand {
+    height: auto;
+}
+.navbar-toggle .icon-bar {
+    background-color: #017de7;
+    margin-top: 10px;
+}
+.nav > li > a:focus, .nav > li.active > a, .nav > li > a:hover, .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    color: #017de7;
+    background: #ffffff;
+}
+.dropdown-menu {
+    border-radius: 0px;
+    border: none;
+    box-shadow: 0px 0px 10px 0.00px rgba(0, 0, 0, 0.21);
+    background-color: #222222;
+    min-width: 200px;
+    padding: 0;
+}
+.dropdown-menu > li > a {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+    color: #017de7;
+}
+/***********************************************************************************
+ 5 - Topbar & Navigation End
+***********************************************************************************/
+
+/***********************************************************************************
+ 6 - Hero Header css Start
+***********************************************************************************/
+header {
+    position: relative;
+}
+header .mp-item {
+    text-align: center;
+}
+.mp-hero-content {
+    padding: 40px 0 30px;
+}
+header .mp-item.slider-01 {
+    background-color: #017de7;
+	background-image:url(http://placehold.it/1920X1080);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:300px 0px;
+	text-align:left;
+}
+header .mp-item.slider-02 {
+    background-color: #017de7;
+	background-image:url(http://placehold.it/1920X1080);
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:300px 0px;
+	text-align:right;
+}
+header .mp-item img {
+    width: 100%;
+    max-width: 1470px;
+    display: inline-block;
+    margin: 0 auto;
+    height: auto;
+}
+.mp-hero-content {
+    color: #fff;
+}
+.mp-hero-content h1 {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+}
+.mp-hero-content .slogan {
+    font-size: 18px;
+}
+.mp-hero-content .btn-white {
+    margin-top: 35px;
+}
+header .owl-theme .owl-controls {
+    display: none !important;
+    margin: 0;
+}
+header .owl-theme .owl-controls .owl-buttons div {
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 30px;
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    margin-top: -40px;
+    color: #017de7;
+    line-height: 76px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity: 1;
+    border: 1px solid rgba(255, 255, 255, .5);
+    background: none;
+    color: rgba(255, 255, 255, .5);
+}
+header .owl-theme .owl-controls .owl-buttons div:hover {
+    background: rgba(255, 255, 255, .5);
+    color: #222222;
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+header .owl-next {
+    right: 20px;
+}
+header .owl-prev {
+    left: 20px;
+}
+/***********************************************************************************
+ 6 - Hero Header css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 7 - Section Movers css Start
+***********************************************************************************/
+.mp-movers .mp-box {
+    background-color: #f7f7f7;
+    border-radius: 0px;
+    box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    display: block;
+}
+.mp-movers .mp-box .icon {
+    display: inline-block;
+    position: relative;
+    min-height: 50px;
+}
+.mp-movers .mp-box .icon img {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+.mp-movers .mp-box .icon img.hover {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mp-movers .mp-box h4 {
+    font-family: 'Philosopher', sans-serif;
+    text-transform: capitalize;
+    color: #111111;
+    font-size: 20px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.mp-movers .mp-box p {
+    color: #888888;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.mp-movers .mp-box:hover {
+    box-shadow: 1px 3px 5px 0.00px rgba(0, 0, 0, 0.2);
+    background-color: #017de7;
+    text-decoration: none;
+}
+.mp-movers .mp-box:hover .icon img {
+    opacity: 0;
+}
+.mp-movers .mp-box:hover .icon img.hover {
+    opacity: 1;
+}
+.mp-movers .mp-box:hover h4 {
+    color: #ffffff;
+}
+.mp-movers .mp-box:hover p {
+    color: #ffffff;
+}
+/***********************************************************************************
+ 7 - Section Movers css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 8 - Get Quick Quote css Start
+***********************************************************************************/
+.mp-get-quick-quote {
+    background: url(http://placehold.it/1920X1080);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mp-quick-form .form-control {
+    border-color: #fff;
+    background: transparent;
+    color: #fff;
+    border-width: 1px;
+}
+.mp-quick-form .form-control::-webkit-input-placeholder {
+    color: #ffffff;
+}
+.mp-quick-form .form-control:-moz-placeholder {
+    color: #ffffff;
+}
+.mp-quick-form .form-control::-moz-placeholder {
+    color: #ffffff;
+}
+.mp-quick-form .form-control:-ms-input-placeholder {
+    color: #ffffff;
+}
+.mp-quick-form .form-control:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.6)
+}
+.mp-quick-form .btn {
+    min-height: 56px;
+}
+/***********************************************************************************
+ 8 - Get Quick Quote css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 9 - Best Services css Start
+***********************************************************************************/
+.mp-best-service .mp-mover-img {
+    text-align: center;
+}
+.mp-best-service .mp-mover-img img {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 0 40px;
+}
+.mp-best-service .mp-box {
+    padding-left: 120px;
+    padding-top: 0px;
+    min-height: 90px;
+    position: relative;
+}
+.mp-best-service .mp-box .mp-item-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 0px;
+    background-color: #017de7;
+    box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.mp-best-service .mp-box h3 {
+    color: #017de7;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.mp-best-service .mp-box p {
+    color: #888888;
+}
+/***********************************************************************************
+ 9 - Best Services css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 10 - Features css Start
+***********************************************************************************/
+.mp-features {
+    background: url(http://placehold.it/1920X1080);
+	background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mp-features .col-20 {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    box-sizing: border-box;
+}
+.mp-features .mp-box .mp-item-img {
+    min-height: 100px;
+    min-width: 156px;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+.mp-features .mp-box .mp-item-img img {
+    height: 72px;
+}
+.mp-features .mp-box h3 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.mp-features .mp-box p {
+    color: #ffffff;
+}
+/***********************************************************************************
+ 10 - Features css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 11 - Our Process css Start
+***********************************************************************************/
+.mp-our-process ul {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.mp-our-process ul li {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    text-align: center;
+}
+.mp-our-process ul li.arrow {
+    min-height: 63px;
+    text-align: center;
+    width: 8%
+}
+.mp-our-process ul li.arrow img {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    display: inline-block;
+    margin: 40px 0
+}
+.mp-our-process .mp-box {
+    position: relative;
+    padding-left: 15px;
+    padding-top: 15px;
+    text-align: center;
+}
+.mp-our-process .mp-box .step {
+    box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.2);
+    background-color: #017de7;
+    border-radius: 0px;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.mp-our-process .mp-box h3 {
+    font-size: 23px;
+    color: #111111;
+    text-transform: capitalize;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+.mp-our-process .mp-box .mp-item-img {
+    background-color: #f7f7f7;
+    border-radius: 0px;
+    box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.2);
+    min-height: 152px;
+    min-width: 158px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+.mp-our-process .mp-box .mp-item-img .img-box {
+    position: relative;
+}
+.mp-our-process .mp-box .mp-item-img img {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+.mp-our-process .mp-box .mp-item-img img.hover {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mp-our-process .mp-box:hover .mp-item-img {
+    background-color: #017de7;
+    box-shadow: 1px 3px 5px 0.00px rgba(0, 0, 0, 0.2);
+}
+.mp-our-process .mp-box:hover h3 {
+    color: #017de7
+}
+.mp-our-process .mp-box:hover img {
+    opacity: 0;
+}
+.mp-our-process .mp-box:hover img.hover {
+    opacity: 1
+}
+/***********************************************************************************
+ 11 - Our Process css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 12 - Dedicated Team css Start
+***********************************************************************************/
+.mp-dedicated-team {
+    background-color: #f7f7f7;
+}
+.mp-dedicated-team .mp-box {
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 1px 3px 5px 0.00px rgba(0, 0, 0, 0.2);
+    background-color: #017de7;
+}
+.mp-dedicated-team .mp-box .img-box {
+    background-color: #ffffff;
+    padding: 0px 0;
+    box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+}
+.mp-dedicated-team .mp-box .img-box img {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity: .8
+}
+.mp-dedicated-team .mp-box .user-details {
+    padding: 20px 0px;
+}
+.mp-dedicated-team .mp-box h3 {
+    text-transform: capitalize;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0px 0 10px;
+}
+.mp-dedicated-team .mp-box .mp-social-network a {
+    font-size: 16px;
+    color: #ffffff;
+    color: rgba(255, 255, 255, .8);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+.mp-dedicated-team .mp-box:hover .img-box img {
+    opacity: 1
+}
+.mp-dedicated-team .mp-box .mp-social-network a:hover {
+    color: #ffffff;
+}
+/***********************************************************************************
+ 12 - Dedicated Team css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 13 - Blog Post css Start
+***********************************************************************************/
+.mp-blog-post .blog-img {
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.2);
+}
+.mp-blog-post .blog-img img {
+    width: 100%;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    opacity: .9
+}
+.mp-blog-post .blog-content {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    position: relative;
+    background-color: #f7f7f7;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    padding-top: 40px;
+    border-radius: 0px;
+}
+.mp-blog-post .md-posted-on {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 0px;
+    background-color: #017de7;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 5px;
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.mp-blog-post .md-posted-on span {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+}
+.mp-blog-post h3 {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: 20px;
+    color: #111111;
+    margin: 0;
+    text-transform: capitalize;
+}
+.mp-blog-post .category {
+    font-size: 14px;
+    color: #017de7;
+    margin: 8px 0;
+}
+.mp-blog-post p {
+    color: #888888;
+    margin: 0
+}
+.mp-blog-post:hover {
+    text-decoration: none;
+}
+.mp-blog-post:hover .blog-img img {
+    opacity: 1
+}
+.mp-blog-post:hover .blog-content {
+    background-color: #ffffff;
+    box-shadow: 1px 3px 5px 0.00px rgba(0, 0, 0, 0.2);
+}
+.mp-blog-post:hover h3 {
+    color: #017de7
+}
+/***********************************************************************************
+ 13 - Blog Post css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 14 - Footer css Start
+***********************************************************************************/
+footer.mp-page-footer {
+    padding: 50px 0 10px;
+    background-color: #222222;
+}
+footer.mp-page-footer h3 {
+    margin: 0 0 10px;
+    color: #eeeeee;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+footer.mp-page-footer p {
+    color: #d7d7d7;
+    margin-bottom: 0px;
+}
+footer .mp-social-network {
+    margin-top: 30px
+}
+footer .mp-social-network a {
+    width: 34px;
+    height: 34px;
+    border-radius: 0px;
+    background-color: #353535;
+    color: #ffffff;
+    display: inline-block;
+    box-shadow: 0px 1px 2px 0.00px rgba(0, 0, 0, 0.2);
+    line-height: 34px;
+    text-align: center;
+    font-size: 14px;
+}
+footer .mp-social-network a:hover {
+    color: #017de7
+}
+.mp-social-network a + a {
+    margin-left: 10px
+}
+footer .mp-link-list li {
+    padding: 0 0 5px
+}
+footer .mp-link-list li + li {
+    padding: 10px 0 5px
+}
+footer .mp-link-list a {
+    line-height: 20px;
+    color: #d7d7d7;
+}
+footer .mp-link-list a .fa {
+    margin-right: 10px
+}
+footer .mp-link-list a:hover {
+    text-decoration: none;
+    color: #017de7
+}
+footer .mp-contact > div {
+    line-height: 24px;
+    border-bottom: #565656 1px solid;
+    padding-bottom: 15px;
+    color: #d7d7d7;
+}
+footer .mp-contact > div + div {
+    margin-top: 15px
+}
+footer .mp-contact > div a {
+    color: #d7d7d7;
+}
+footer .mp-contact > div a:hover,
+footer .mp-contact > div a:focus {
+    text-decoration: none;
+    color: #017de7
+}
+.mp-copyright {
+    background: #111111;
+    line-height: 26px;
+    color: #bbbbbb;
+    padding: 10px 0;
+}
+.mp-copyright a {
+    color: #017de7
+}
+/***********************************************************************************
+ 14 - Footer css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 15 - SIDEBAR css Start
+***********************************************************************************/
+.mp-sidebar .search .form-control {
+    box-shadow: none;
+    font-size: 14px;
+}
+.mp-sidebar .mp-sidecol-item {
+    display: inline-block;
+    width: 100%;
+}
+.mp-sidebar .mp-sidecol-item + .mp-sidecol-item {
+    margin-top: 30px;
+}
+.mp-sidebar .search .btn {
+	background: #fff;
+    color: #017de7;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid #ccc;
+    min-height: 46px;
+}
+.mp-title {
+    margin-bottom: 15px;
+}
+.mp-title h2 {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    color: #323a45;
+    font-family: 'Philosopher', sans-serif;
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+.mp-title h2:before {
+    width: calc(100% + 10px);
+    content: '';
+    position: absolute;
+    left: 0px;
+    height: 1px;
+    background-color: #017de7;
+    bottom: 0;
+}
+.mp-sidecol-about-me img {
+    border-radius: 50%;
+    max-height: 120px;
+    max-width: 120px;
+    width: 100%;
+    height: 100%;
+}
+.mp-sidecol-about-me h3 {
+    font-size: 20px;
+    color: #2a2a26;
+    margin: 10px 0 0;
+}
+.mp-sidecol-about-me .occupation {
+    font-size: 12px;
+    color: #656565;
+    font-style: italic;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+.mp-sidecol-about-me p {
+    font-size: 14px;
+    color: #656565;
+}
+.mp-sidecol-post a {
+    position: relative;
+    min-height: 85px;
+    padding-left: 108px;
+    padding-bottom: 10px;
+    border-bottom: #ebeced 1px solid;
+    display: block;
+}
+.mp-sidecol-post a + a {
+    margin-top: 15px;
+}
+.mp-sidecol-post a img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mp-sidecol-post a h3 {
+    font-size: 18px;
+    color: #323a45;
+    margin: 0 0 5px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-transform: none;
+}
+.mp-sidecol-post a p {
+    color: #888888;
+    line-height: 20px;
+}
+.mp-sidecol-post a .responce {
+    font-size: 12px;
+    color: rgb(1, 125, 231);
+}
+.mp-sidecol-post a .responce span + span {
+    margin-left: 30px;
+}
+.mp-sidecol-post a:hover {
+    text-decoration: none;
+}
+.mp-sidecol-post a:hover h3 {
+    color: #017de7;
+}
+.mp-sidecol-item .mp-social-network a {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #dedede;
+    line-height: 44px;
+    font-size: 18px;
+    color: #dedede;
+}
+.mp-sidecol-item .mp-social-network a:hover {
+    color: #017de7;
+    border-color: #017de7;
+}
+.mp-sidecol-item .tags {
+    margin: -3px;
+}
+.mp-sidecol-item .tags a {
+    display: inline-block;
+    margin: 3px;
+    border: 1px solid #e1e1e1;
+    padding: 7px 15px;
+    float: left;
+    border-radius: 0px;
+    min-height: 34px;
+}
+.mp-sidecol-item .tags a:hover {
+    background-color: #017de7;
+    color: #fff;
+    text-decoration: none;
+}
+/*----- Sidebar Item ------*/
+.mp-sidecol-item .nav-tabs {
+    border: none;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px
+}
+.mp-sidecol-item .nav-tabs li {
+    float: left;
+    width: 50%;
+}
+.mp-sidecol-item .nav-tabs li a {
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    color: #9a9fa7;
+    border-bottom: #f3f3f3 1px solid;
+    outline: none;
+}
+.mp-sidecol-item .nav-tabs li a:hover, .mp-sidecol-item .nav-tabs li a:focus {
+    border: none;
+    border-bottom: #f3f3f3 1px solid;
+    color: #323a45;
+}
+.mp-sidecol-item .nav-tabs li.active a {
+    border-color: #017de7
+}
+/*----- Sidebar Categories ------*/
+.mp-sidecol-item .categorie li {
+    border-bottom: #ebeced 1px solid;
+}
+.mp-sidecol-item .categorie a {
+    font-size: 13px;
+    color: #8893a2;
+    display: block;
+    padding: 15px 0;
+}
+.mp-sidecol-item .categorie li:first-child a {
+    padding-top: 0
+}
+.mp-sidecol-item .categorie a:hover,
+.mp-sidecol-item .categorie a:focus {
+    color: #017de7;
+    text-decoration: none;
+    padding-left: 10px
+}
+/*----- Sidebar Addvertisment ------*/
+.mp-adds a:hover {
+    opacity: .7
+}
+.mp-sidebar.mp-adds .mp-sidecol-item + .mp-sidecol-item {
+    margin-top: 30px;
+}
+/***********************************************************************************
+ 15 - SIDEBAR css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 16 - PAGE NOT FOUND css Start
+***********************************************************************************/
+.mp-page-not-found img {
+    display: inline-block
+}
+.mp-page-not-found h2 {
+    text-transform: none;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+}
+.mp-page-not-found .btn {
+    line-height: 34px;
+}
+/***********************************************************************************
+ 16 - PAGE NOT FOUND css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 17 - BLOG SINGLE PAGE css Start
+***********************************************************************************/
+.mp-blog-sections {
+    display: inline-block;
+    width: 100%;
+}
+.mp-blog-sections + .mp-blog-sections {
+    margin-top: 70px;
+}
+.mp-blog-sections .mp-heading h2 {
+    font-size: 24px;
+    color: #434343;
+    text-transform: none;
+    font-family: 'Philosopher', sans-serif;
+    margin: 0 0 30px;
+    border-bottom: #f6f6f6 2px solid;
+    padding-bottom: 16px;
+}
+.mp-blog-details {
+    background-color: #fbfbfb;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+}
+.mp-blog-content {
+    padding: 30px 30px 10px 30px;
+}
+.mp-blog-content p {
+    margin-bottom: 20px;
+}
+.mp-blog-title {
+    margin-bottom: 20px;
+}
+.mp-blog-title h2 {
+    margin: 0;
+    font-size: 18px;
+}
+.mp-blog-title span b {
+    color: #404040;
+    font-family: 'Open Sans', sans-serif;
+}
+.mp-blog-highlight-point {
+    margin: 20px 0
+}
+.mp-blog-highlight-point h3 {
+    color: #323a45;
+    margin: 0;
+    font-size: 15px;
+    text-transform: none;
+    font-family: 'Philosopher', sans-serif;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.mp-blog-footer {
+    border-top: #ededed 1px solid;
+    padding: 15px 30px;
+}
+.mp-blog-footer li {
+    display: inline-block;
+}
+.mp-blog-footer .mp-posted-on {
+    color: #404040;
+    font-family: 'Philosopher', sans-serif;
+}
+.mp-blog-footer .mp-social-network a {
+    color: #ababab;
+}
+.mp-blog-footer .mp-social-network a:hover,
+.mp-blog-footer .mp-social-network a:focus {
+    color: #017de7;
+    text-decoration: none;
+}
+.mp-blog-footer .mp-tags {
+    font-size: 13px;
+    color: #ababab;
+}
+/*----- Blog Comment section -----*/
+.mp-comment-item {
+    position: relative;
+    min-height: 70px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+.mp-comment-item + .mp-comment-item {
+    margin-top: 30px;
+}
+.mp-comment-item:after {
+    width: calc(100% - 100px);
+    left: 100px;
+    bottom: 0;
+    height: 2px;
+    background: #f6f6f6;
+    content: '';
+    position: absolute;
+}
+.mp-comment-item img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0px;
+}
+.mp-comment-top {
+    margin-bottom: 5px;
+}
+.mp-comment-top h4 {
+    display: inline-block;
+    color: #434343;
+    margin: 0;
+}
+.mp-comment-top span {
+    font-size: 13px;
+}
+.mp-comment-top a {
+    color: #017de7;
+    font-family: 'Philosopher', sans-serif;
+}
+.mp-comment-top a.pull-right {
+    float: none !important;
+}
+.mp-comment-item-replay {
+    margin-left: 30px;
+}
+/***********************************************************************************
+ 17 - BLOG SINGLE PAGE css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 18 - CONTACT US PAGE css Start
+***********************************************************************************/
+.mp-google-map {
+    width: 100%;
+    height: 428px;
+    margin-bottom: 30px;
+}
+.mp-contact-details .mp-heading {
+    margin-bottom: 20px;
+}
+.mp-contact-details .mp-heading h2 {
+    font-size: 24px;
+    color: #51565c;
+    margin: 0;
+}
+.mp-icon-left {
+    padding: 25px 0px;
+    position: relative;
+    padding-left: 70px;
+    display: block;
+}
+.mp-icon-left .icon {
+    position: absolute;
+    top: 25px;
+    font-size: 24px;
+    left: 0;
+    text-align: center;
+    color: #017de7;
+    border: 1px solid;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    line-height: 50px;
+}
+.mp-contact-details li,
+.mp-contact-details a {
+    color: #888888
+}
+.mp-contact-details a:hover,
+.mp-contact-details a:focus {
+    color: #017de7;
+    text-decoration: none;
+}
+/***********************************************************************************
+ 18 - CONTACT US PAGE css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 19 - FAQ's PAGE css Start
+***********************************************************************************/
+.mp-panel-faq {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+.mp-panel-faq + .mp-panel-faq {
+    border-top: #ededed 1px solid;
+    border-radius: 0;
+}
+.mp-panel-faq .panel-heading {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+.mp-panel-faq .panel-title {
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #434343;
+    font-family: 'Philosopher', sans-serif;
+}
+.mp-panel-faq .panel-title:hover, .mp-panel-faq .panel-title:focus {
+    text-decoration: none;
+}
+.mp-panel-faq .panel-body {
+    border: none !important;
+    padding: 0 0 16px 0
+}
+.mp-panel-faq .mp-icon-right {
+    padding-left: 0;
+}
+.mp-icon-right {
+    padding: 16px;
+    position: relative;
+    padding-right: 54px;
+    display: block;
+}
+.mp-icon-right .indicator {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -17px;
+    text-align: center;
+    background-color: #017de7;
+    border-radius: 50%;
+    font-style: normal;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+/***********************************************************************************
+ 19 - FAQ's PAGE css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 20 - ABOUT US css Start
+***********************************************************************************/
+.mp-why-choose-us {
+    background-color: #fcfcfc;
+}
+.mp-choose-us-content h2 {
+    font-size: 20px;
+    color: #111111;
+    margin: 0 0 30px;
+}
+.mp-choose-us-content ul {
+    padding-left: 30px;
+}
+.mp-choose-us-content li {
+    padding: 10px 0 10px 40px;
+    position: relative;
+    color: #606060;
+}
+.mp-choose-us-content li .icon {
+    position: absolute;
+    left: 0;
+    top: 16px;
+}
+/***********************************************************************************
+ 20 - ABOUT US css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 21 - Booking css Start
+***********************************************************************************/
+.mp-booking .nav {
+    border: none;
+    margin-top: -15px;
+}
+.mp-booking .nav-tabs.nav-justified > li > a {
+    border: none;
+    margin: 0;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #bababa;
+    border-bottom: #f8f8f8 3px solid;
+    padding: 15px 0;
+    position: relative;
+}
+.mp-booking .nav-tabs.nav-justified > li > a:hover {
+    color: #434343;
+}
+.mp-booking .nav-tabs.nav-justified > .active > a, .mp-booking .nav-tabs.nav-justified > .active > a:focus, .mp-booking .nav-tabs.nav-justified > .active > a:hover {
+    border: none;
+    color: #434343;
+    border-bottom: #017de7 3px solid;
+}
+.mp-booking .nav-tabs.nav-justified > li.mp-submitted > a {
+    color: #017de7;
+}
+.mp-booking .nav-tabs.nav-justified > li.mp-submitted > a:before {
+    content: '';
+    font-family: FontAwesome;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #017de7;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+    bottom: -16px;
+    left: 50%;
+    margin-left: -14px;
+    z-index: 999
+}
+.mp-item a {
+    color: #017de7;
+}
+.mp-item-checkbox, .mp-item-radio {
+    position: relative;
+    overflow: hidden;
+    padding-left: 40px;
+}
+.mp-item-checkbox .mp-checkbox, .mp-item-radio .mp-radio {
+    margin: 0;
+}
+.mp-checkbox input[type="checkbox"],
+.mp-radio input[type="radio"] {
+    position: absolute;
+    left: -99999px;
+}
+.mp-checkbox .mp-ckecked {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    top: 50%;
+    margin-top: -12px;
+    border-radius: 0px;
+    border: 3px solid rgba(153, 153, 153, 0.2);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+.mp-checkbox span .fa {
+    position: relative;
+    top: 2px;
+    display: block;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+.mp-checkbox span.mp-ckecked {
+    color: #017de7;
+}
+.mp-checkbox input:checked + .mp-content .mp-ckecked {
+    display: block;
+    border-color: #017de7;
+}
+.mp-checkbox input:checked + .mp-content .mp-ckecked .fa {
+    opacity: 1
+}
+.mp-form-content {
+    padding-top: 30px;
+}
+.mp-form-content h3 {
+    margin: 0 0 20px;
+    color: #434343;
+    text-transform: none;
+    font-family: 'Philosopher', sans-serif;
+}
+.mp-form-content label {
+    color: #434343;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: normal;
+}
+.mp-input-icon {
+    position: relative;
+}
+.mp-input-icon-right .mp-icon, .mp-input-icon-left .mp-icon {
+    position: absolute;
+    color: #e1e1e1;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 0;
+}
+.mp-input-icon-right .mp-icon {
+    right: 30px;
+}
+.mp-input-icon-left .mp-icon {
+    left: 30px;
+}
+.mp-input-icon-right .form-control {
+    padding-right: 60px;
+}
+.mp-input-icon-left .form-control {
+    padding-left: 60px;
+}
+select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/mp-select-arrow.png) no-repeat right center;
+}
+.datepicker.datepicker-dropdown {
+    background: #fff;
+    min-width: inherit
+}
+.datepicker td,
+.datepicker th {
+    width: 3em
+}
+.datepicker-dropdown.datepicker-orient-top::before {
+    border-top: none;
+}
+.mp-spacing-20 {
+    display: inline-block;
+    margin: 10px 0;
+    width: 100%
+}
+.mp-distance {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 15px 0;
+    line-height: 26px;
+    font-size: 16px;
+    color: #434343;
+    font-family: 'Philosopher', sans-serif;
+}
+.mp-distance .fa {
+    color: #e1e1e1;
+    margin-right: 10px
+}
+.mp-terms {
+    margin: 10px 0 30px 0
+}
+.mp-terms label {
+    font-size: 14px;
+    color: #888888;
+}
+.mp-buttons .mp-button {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.mp-buttons .mp-button small {
+    display: block;
+}
+.mp-text-right, .mp-text-left {
+    text-align: center
+}
+.mp-household-title {
+    color: #434343;
+    font-size: 16px;
+    font-family: 'Philosopher', sans-serif;
+    margin-bottom: 15px;
+}
+.mp-household-box {
+    background: #fff;
+    border-radius: 0px;
+    border: 1px solid #e1e1e1;
+    padding: 30px;
+}
+.mp-household-box .form-control {
+    border: none;
+    background: #fbfbfb;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+.mp-household-box .mp-checkbox {
+    position: relative;
+}
+.mp-household-box .mp-checkbox label {
+    display: block;
+    position: relative;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 16px;
+    padding-right: 50px;
+    cursor: pointer
+}
+.mp-household-area .mp-checkbox label {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.mp-household-box .mp-checkbox .mp-checkbox-content {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    color: #aaa;
+    margin: 0;
+    font-weight: normal;
+    font-family: 'Philosopher', sans-serif;
+}
+.mp-household-box .mp-checkbox + .mp-checkbox {
+    border-top: 1px solid #f4f4f4;
+}
+.mp-household-box .mp-checkbox .fa {
+    color: #f8f8f8;
+    position: absolute;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 0;
+    height: 100%;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease
+}
+.mp-household-box .mp-checkbox input[type="checkbox"] {
+    position: absolute;
+    left: -99999px;
+}
+.mp-household-box .mp-checkbox input:checked + .mp-checkbox-content {
+    color: #434343;
+}
+.mp-household-box .mp-checkbox input:checked + .mp-checkbox-content .mp-icon {
+    color: #017de7;
+}
+.mp-household-items .mp-checkbox label {
+    padding-left: 40px;
+}
+.mp-household-items .mp-checkbox label .mp-icon {
+    right: auto;
+    left: 0
+}
+.mp-household-items .mp-checkbox {
+    padding-right: 90px;
+}
+.mp-household-items .mp-checkbox .form-control[type="number"] {
+    position: absolute;
+    min-height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    right: 0;
+    width: 90px;
+    padding: 0 20px;
+    background: rgba(251, 251, 251, 0.5);
+    border: 1px solid #f3f3f3;
+    color: #434343;
+    font-size: 16px;
+    font-family: 'Philosopher', sans-serif;
+}
+.mp-order-confirmation img {
+    max-width: 210px;
+    display: inline-block
+}
+.mp-order-confirmation h2 {
+    text-transform: none;
+    color: #434343;
+    margin: 30px 0 20px;
+    font-family: 'Philosopher', sans-serif;
+}
+.mp-order-confirmation p {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.mp-order-confirmation .mp-callus {
+    min-height: 56px;
+    border-radius: 0px;
+    background: #434343;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Philosopher', sans-serif;
+    color: #ffffff;
+    display: inline-block;
+    line-height: 56px;
+    padding: 0 40px;
+    letter-spacing: 1px;
+}
+.mp-order-confirmation .mp-callus:hover, .mp-order-confirmation .mp-callus:focus {
+    color: #017de7;
+    text-decoration: none
+}
+.mp-separator hr {
+    background: #dedede;
+    height: 1px;
+    width: 110px;
+    border: none;
+    margin: 40px 0;
+    display: inline-block;
+}
+.mp-order-confirmation h5 {
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.mp-order-confirmation .mp-social-network {
+    margin: 15px 0 0
+}
+.mp-order-confirmation .mp-social-network a {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 2px solid #e3e2e2;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 52px;
+    color: #dedede;
+    margin: 0 5px;
+}
+.mp-order-confirmation .mp-social-network a:hover, .mp-order-confirmation .mp-social-network a:focus {
+    border-color: #017de7;
+    color: #017de7;
+}
+/***********************************************************************************
+ 21 - Booking css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 22 - PAGINATION css Start
+***********************************************************************************/
+.pagination > li {
+    display: inline-block;
+    border-radius: 0px;
+    background-color: #f7f7f7;
+    border: none;
+}
+.pagination > li +li {
+    margin-left: 5px;
+}
+.pagination-lg > li > a, .pagination-lg > li > span {
+    border-radius: 0px;
+    background-color: #f7f7f7;
+    border: none;
+    font-size: 14px;
+    font-family: 'Philosopher', sans-serif;
+    color: #2a2a26;
+}
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: #017de7;
+    color: #ffffff;
+}
+.pagination > li > a:focus, .pagination > li > a:hover, .pagination > li > span:focus, .pagination > li > span:hover {
+    color: #017de7;
+}
+/***********************************************************************************
+ 22 - PAGINATION css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 23 - SCROLL TO TOP css Start
+***********************************************************************************/
+.mp-scrollToTop {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    position: fixed;
+    right: 25px;
+    bottom: -25px;
+    outline: none;
+    background: #009be5;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0.00px rgba(0, 0, 0, 0.03);
+    border-radius: 100%;
+}
+.mp-scrollToTop.scroll-active {
+    opacity: .6;
+    bottom: 25px;
+}
+.mp-scrollToTop.scroll-active:hover {
+    opacity: 1;
+	color:#ffffff;
+}
+.mp-scrollToTop.scroll-active:focus {
+    outline: none;
+	color:#ffffff;
+}
+/***********************************************************************************
+ 23 - SCROLL TO TOP css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 24 - Request Call Back css Start
+***********************************************************************************/
+.mp-request-call-back {
+    position: fixed;
+    z-index: 99;
+    top: 260px;
+    right: 0px;
+    background: #222222;
+    border-radius: 0px;
+    padding: 15px;
+    box-shadow: 1px 3px 5px 0.00px rgba(0, 0, 0, 0.2);
+}
+.mp-request-call-back span {
+    position: relative;
+    float: left;
+    display: inline-block;
+}
+.mp-request-call-back img {
+    width: 24px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.mp-request-call-back img.hover {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    opacity: 0;
+}
+.mp-request-call-back:hover img {
+    opacity: 0
+}
+.mp-request-call-back:hover img.hover {
+    opacity: 1
+}
+.mp-request-callback-modal .modal-dialog {
+    max-width: 530px;
+}
+.mp-request-callback-modal .form-group {
+    margin: 0;
+}
+.mp-request-callback-modal .form-group + .form-group {
+    margin: 30px 0 0;
+}
+.mp-request-callback-modal .form-control {
+    border-color: #e1e1e1;
+    box-shadow: none;
+}
+.mp-request-callback-modal .btn {
+    width: 270px;
+}
+/***********************************************************************************
+ 24 - Request Call Back css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 25 - MODAL BOX css Start
+***********************************************************************************/
+.modal-dialog {
+    margin: 60px auto;
+}
+.modal-backdrop {
+    background-color: #fff;
+}
+.modal-backdrop.in {
+    opacity: .95
+}
+.modal-content {
+    box-shadow: 0px 0px 70px 0.00px rgba(76, 76, 76, 0.20);
+    border-radius: 0px;
+    border: none;
+    background-color: #ffffff;
+}
+.modal-header {
+    border: none;
+    padding: 30px;
+}
+.modal-title {
+    color: #51565c;
+    text-transform: uppercase;
+}
+.modal-body {
+    padding: 0 30px;
+    border: none;
+}
+.modal-footer {
+    padding: 30px;
+    border: none;
+}
+.modal-footer.text-center {
+    text-align: center;
+}
+/***********************************************************************************
+ 25 - MODAL BOX css End
+***********************************************************************************/
+
+/***********************************************************************************
+ 26 - Responsive css Start
+***********************************************************************************/
+@media (min-width: 992px) and (max-width:1199px){
+	header .mp-item.slider-01 {
+    padding: 200px 0px;
+	}
+	header .mp-item.slider-02 {
+    padding: 200px 0px;
+	}
+}
+@media (min-width: 768px) and (max-width:991px){
+	header .mp-item.slider-01 {
+    padding: 200px 0px;
+	}
+	header .mp-item.slider-02 {
+    padding: 200px 0px;
+	}
+}
+@media (min-width: 480px) and (max-width:767px){
+	header .mp-item.slider-01 {
+    padding: 150px 0px;
+	}
+	header .mp-item.slider-02 {
+    padding: 150px 0px;
+	}
+}
+@media (max-width: 991px) {
+	header .mp-item.slider-01 {
+    padding: 150px 0px;
+	}
+	header .mp-item.slider-02 {
+    padding: 150px 0px;
+	}
+}
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+@media(min-width:768px) {
+    section {
+        padding: 80px 0 80px;
+    }
+    .mp-desktop-view {
+        display: block
+    }
+    .mp-mobile-view {
+        display: none;
+    }
+    section.mp-section-with-col {
+        padding: 80px 0 80px;
+    }
+    .mp-section-heading {
+        padding-bottom: 15px;
+        margin-bottom: 50px;
+    }
+    .mp-section-heading h2,
+    .mp-section-heading h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .mp-inner-hero-header {
+    }
+    .mp-inner-hero-header .mp-section-heading {
+        margin: 70px 0
+    }
+    header .owl-theme .owl-controls {
+        display: block !important;
+    }
+    .mp-hero-content {
+        padding: 100px 0 80px;
+    }
+    .mp-hero-content h1 {
+        font-size: 42px;
+    }
+    .mp-hero-content .slogan {
+        font-size: 20px;
+    }
+	.mp-movers .mp-box {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .mp-movers .mp-box h4 {
+        margin-top: 50px;
+    }
+	.mp-quick-form {
+        padding: 0 45px;
+    }
+	.mp-our-process ul {
+        margin-left: -15px;
+        margin-right: -15px;
+        display: table
+    }
+    .mp-our-process ul li {
+        display: table-cell;
+        width: 18%;
+    }
+    .mp-our-process ul li.arrow {
+        width: 5%;
+        position: relative;
+        vertical-align: middle;
+        padding: 0
+    }
+    .mp-our-process ul li.arrow img {
+        position: relative;
+        top: -10px;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin: 0;
+    }
+    .mp-our-process .mp-box .mp-item-img {
+        min-width: inherit
+    }
+	footer.mp-page-footer {
+        padding: 80px 0 40px;
+    }
+    footer.mp-page-footer h3 {
+        margin: 0 0 30px;
+    }
+    footer .mp-social-network {
+        margin-top: 30px
+    }
+    .mp-copyright {
+        padding: 20px 0
+    }
+	.mp-blog-title h2 {
+        margin: 0;
+        font-size: 24px;
+        color: #404040;
+        text-transform: none;
+        font-family: 'Philosopher', sans-serif;
+    }
+    .mp-blog-highlight-point {
+        padding-left: 34px;
+    }
+    .mp-blog-highlight-point {
+        margin: 30px 0
+    }
+    .mp-blog-footer .mp-posted-on {
+        margin-right: 15px
+    }
+    .mp-comment-form .btn {
+    }
+    .mp-comment-top a.pull-right {
+        float: right !important;
+    }
+    .mp-comment-item-replay {
+        margin-left: 100px;
+    }
+	.mp-google-map {
+        margin-bottom: 70px
+    }
+	.mp-services {
+        padding-bottom: 80px
+    }
+    .mp-services .mp-col-responsive [class*="col-"] {
+        margin-bottom: 70px;
+    }
+	.mp-panel-faq .mp-icon-right {
+        padding: 30px 30px 30px 0px;
+    }
+    .mp-panel-faq .panel-body {
+        padding: 0 0 20px 0
+    }
+    .mp-panel-faq:first-child .mp-icon-right {
+        margin-top: -40px;
+    }
+	.mp-choose-us-content {
+        padding-left: 40px;
+    }
+    .mp-choose-us-content h2 {
+        font-size: 30px;
+    }
+    .mp-choose-us-content p {
+        margin-bottom: 30px;
+    }
+	.mp-form-content {
+        padding-top: 60px;
+    }
+    .mp-form-content h3 {
+        margin: 0 0 20px;
+    }
+    .mp-form-content .form-group {
+        margin-bottom: 15px;
+    }
+    .mp-text-right {
+        text-align: right
+    }
+    .mp-text-left {
+        text-align: left;
+    }
+    .mp-order-confirmation {
+        padding: 30px 0 0;
+    }
+    .mp-order-confirmation h2 {
+        margin: 60px 0 20px
+    }
+    .mp-order-confirmation .mp-callus {
+    }
+}
+@media(min-width:990px) {
+    .navbar-custom {
+        min-height: 0px;
+    }
+    .mp-topbar .top-contact-details {
+        float: left;
+        display: inline-block
+    }
+    .mp-topbar li + li {
+        margin-left: 30px;
+    }
+    .mp-topbar .call-us-now {
+        float: right;
+    }
+    .navbar-brand {
+		height: auto;
+		margin-top: 0px;
+		float: left;
+		margin: 17px 0px 0px 0px;
+		font-size: 18px;
+		line-height: 20px;
+		margin-left: 0px !important;
+		padding: 0;
+    }
+    .navbar-nav {
+        float: right;
+        margin-top: 0px;
+    }
+    .dropdown-menu {
+        
+    }
+    .navbar-nav > li > .dropdown-menu {
+        border-top: 2px solid #017de7;
+    }
+    .dropdown-menu > li + li > a {
+        border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+	.mp-features .mp-box .mp-item-img {
+        padding-bottom: 40px;
+        margin-bottom: 15px;
+    }
+    .mp-features .col-20 {
+        width: 33.33333%
+    }
+	.mp-our-process ul {
+        margin-left: -15px;
+        margin-right: -15px;
+        display: table
+    }
+    .mp-our-process ul li {
+        display: table-cell;
+    }
+    .mp-our-process ul li.arrow {
+        width: 8%;
+        position: relative;
+        vertical-align: middle
+    }
+    .mp-our-process ul li.arrow img {
+        position: relative;
+        top: -10px;
+    }
+	.mp-desktop-padding-left30 {
+        padding-left: 30px;
+    }
+    .mp-sidebar .mp-sidecol-item + .mp-sidecol-item {
+        margin-top: 50px;
+    }
+	.mp-page-not-found h2 {
+        font-size: 26px;
+        margin: 80px 0 30px
+    }
+    .mp-page-not-found .btn {
+    }
+}
+@media(min-width:1200px) {
+    .mp-best-service {
+        padding-bottom: 50px;
+        position: relative;
+        overflow: hidden;
+    }
+    .mp-best-service .mp-mover-img {
+        min-height: 540px
+    }
+    .mp-best-service .mp-mover-img img {
+        position: absolute;
+		left: -120px;
+		width: auto;
+		top: -80px;
+		margin: 0;
+    }
+    .mp-best-service .services {
+        padding-left: 56px;
+    }
+    .mp-best-service .services .mp-col-responsive [class*="col-"] {
+        margin-bottom: 70px;
+    }
+}
+@media(min-width:200px) {
+    .mp-features .col-20 {
+        width: 100%
+    }
+}
+@media(min-width:680px) {
+    .mp-features .col-20 {
+        width: 50%
+    }
+    .mp-features .mp-box {
+        padding: 0 50px
+    }
+	.mp-household-items.mp-household-box {
+        padding-right: 0;
+    }
+}
+@media(min-width:1300px) {
+    .mp-features .col-20 {
+        width: 20%
+    }
+}
+@media(min-width:270px) {
+    .mp-form-content .btn-width-270 {
+    }
+}
+/***********************************************************************************
+ 26 - Responsive css End
+***********************************************************************************/
